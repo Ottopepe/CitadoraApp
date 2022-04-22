@@ -237,18 +237,18 @@ return [
         ],
 
         // Sidebar items:
-        [
-            'type' => 'sidebar-menu-search',
-            'text' => 'search',
-        ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
+        // [
+        //     'type' => 'sidebar-menu-search',
+        //     'text' => 'search',
+        // ],
+        // [
+        //     'text' => 'blog',
+        //     'url'  => 'admin/blog',
+        //     'can'  => 'manage-blog',
+        // ],
         [
             'text'        => 'Dahsboard',
-            'url'         => 'admin',
+            'url'         => '/',
             'icon'        => 'far fa-fw fas fa-tachometer-alt',
             'label_color' => 'success',
         ],
@@ -258,30 +258,30 @@ return [
             'submenu' => [
                 [
                     'text' => 'Ordenes de Atencion',
-                    'url'  => 'admin/orders',
+                    'url'  => '/orders',
                 ],
                 [
                     'text' => 'Nueva Orden de Atencion',
-                    'url'  => 'admin/ordersnew',
+                    'url'  => '/ordersnew',
                 ],
             ],
         ],
         [
             'text'        => 'Doctores',
-            'url'         => 'admin/doctors',
+            'url'         => 'doctors',
             'icon'        => 'far fa-fw fas fa-user-md',
             'label_color' => 'success',
         ],
         [
             'text'        => 'Pacientes',
-            'url'         => 'admin/patients',
+            'url'         => '/patients',
             'icon'        => 'far fa-fw fas fa-wheelchair',
             'label_color' => 'success',
         ],
        
         [
             'text'        => 'Historias',
-            'url'         => 'admin/historys',
+            'url'         => '/historys',
             'icon'        => 'far fa-fw fas fa-file-medical',
             'label_color' => 'success',
         ],
@@ -292,12 +292,12 @@ return [
                 [
                     'text' => 'Ingresos',
                     'icon'    => 'far fa-fw fas fa-file-invoice-dollar',
-                    'url'  => 'admin/reportsbox',
+                    'url'  => '/reportsbox',
                 ],
                 [
                     'text' => 'Historias',
                     'icon'    => 'far fa-fw fas fa-file-medical-alt',
-                    'url'  => 'admin/historysbox',
+                    'url'  => '/historysbox',
                 ],
             ],
         ],
@@ -308,12 +308,12 @@ return [
                 [
                     'text' => 'Usuarios',
                     'icon'    => 'far fa-fw fas fa-user-cog',
-                    'url'  => 'admin/confiusers',
+                    'url'  => '/confiusers',
                 ],
                 [
                     'text' => 'Configuracion General',
                     'icon'    => 'far fa-fw fas fa-cog',
-                    'url'  => 'admin/configall',
+                    'url'  => '/configall',
                 ],
             ],
         ],
@@ -357,7 +357,7 @@ return [
 
     'plugins' => [
         'Datatables' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
